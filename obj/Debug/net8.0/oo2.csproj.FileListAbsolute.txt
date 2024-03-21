@@ -1,0 +1,14 @@
+C:\Users\LENOVO\Desktop\Ödevler\oo2\bin\Debug\net8.0\oo2.exe
+C:\Users\LENOVO\Desktop\Ödevler\oo2\bin\Debug\net8.0\oo2.deps.json
+C:\Users\LENOVO\Desktop\Ödevler\oo2\bin\Debug\net8.0\oo2.runtimeconfig.json
+C:\Users\LENOVO\Desktop\Ödevler\oo2\bin\Debug\net8.0\oo2.dll
+C:\Users\LENOVO\Desktop\Ödevler\oo2\bin\Debug\net8.0\oo2.pdb
+C:\Users\LENOVO\Desktop\Ödevler\oo2\obj\Debug\net8.0\oo2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\Desktop\Ödevler\oo2\obj\Debug\net8.0\oo2.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Desktop\Ödevler\oo2\obj\Debug\net8.0\oo2.AssemblyInfo.cs
+C:\Users\LENOVO\Desktop\Ödevler\oo2\obj\Debug\net8.0\oo2.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\Ödevler\oo2\obj\Debug\net8.0\oo2.dll
+C:\Users\LENOVO\Desktop\Ödevler\oo2\obj\Debug\net8.0\refint\oo2.dll
+C:\Users\LENOVO\Desktop\Ödevler\oo2\obj\Debug\net8.0\oo2.pdb
+C:\Users\LENOVO\Desktop\Ödevler\oo2\obj\Debug\net8.0\oo2.genruntimeconfig.cache
+C:\Users\LENOVO\Desktop\Ödevler\oo2\obj\Debug\net8.0\ref\oo2.dll
