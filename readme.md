@@ -115,15 +115,16 @@ Console.WriteLine("Birinci sayıyı girin.");
 ## Proje5
 ## C#'ta bir sayı (x) isteyen ve 10 * x' görüntüleyen bir program oluşturun. Kullanıcı 0 girene kadar tekrarlanmalıdır. 
 ```c#
-    Console.WriteLine("Birinci Sayıyı Giriniz:"); 
+   int x;
+        Console.Write("Lütfen bir sayı giriniz (0 girerseniz program sonlanır): ");
+        x = Convert.ToInt32(Console.ReadLine());
 
-    int x = Convert.ToInt32(Console.ReadLine());
-    
-    Console.WriteLine("İkinci Sayıyı Giriniz:");
-    int y = Convert.ToInt32(Console.ReadLine());
-    while (x <= y) 
-{    Console.WriteLine(x++); }
-
+        while (x != 0)
+        {
+            Console.WriteLine("10 * " + x + " = " + (10 * x));
+            Console.Write("Lütfen bir sayı giriniz (0 girerseniz program sonlanır): ");
+            x = Convert.ToInt32(Console.ReadLine());
+        }
 ````
 
 ## Proje6
