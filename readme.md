@@ -141,11 +141,7 @@ Console.WriteLine("Birinci sayıyı girin.");
         for (int i = baslangic; i <= bitis; i++)
         {
             Console.WriteLine(i);
-        }
-    
-
-
-  
+        }  
 ````
 # Proje7
 
