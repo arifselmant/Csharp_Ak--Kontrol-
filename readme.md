@@ -345,7 +345,7 @@ while (true )
 ## Kullanıcıdan br sayı aralığı (x, y) steyen ve x'ten y'ye kadar çarpım tablosunu görüntüleyen br C# programı oluşturun. 
 
  ````c#
- 
+ Console.WriteLine("Bir Sayı Giriniz");
  int x = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Bir Y Sayısı Giriniz");
  int y = Convert.ToInt32(Console.ReadLine());
