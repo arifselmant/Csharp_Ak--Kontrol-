@@ -335,7 +335,8 @@ int sayi2 = Convert.ToInt32(Console.ReadLine());
 ````
 
 # Proje 13
-## Kullanıcıdan br sayıConsole.WriteLine("Bir X Sayısı Giriniz");
+## Kullanıcıdan br sayı aralığı (x, y) steyen ve x'ten y'ye kadar çarpım tablosunu görüntüleyen br C# programı oluşturun. 
+
  ````c#
  
  int x = Convert.ToInt32(Console.ReadLine());
