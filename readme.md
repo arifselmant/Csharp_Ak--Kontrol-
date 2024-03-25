@@ -42,7 +42,7 @@ if (işlem == "4");
 }
 ````
 ## Proje2
-## Kullanıcıdan iki sayı ve bir şlem (+, -, x, /) sembolü isteyen ve ardından işlem hesaplayıp sonucu ekrana yazan br C# programı yazınız.Eğer işlem sembolü öncek sembollerden farklıysa, "Tanınmayan karakter" metnn gösternz.
+## Kullanıcıdan iki sayı ve bir işlem (+, -, x, /) sembolü isteyen ve ardından işlem hesaplayıp sonucu ekrana yazan br C# programı yazınız.Eğer işlem sembolü öncek sembollerden farklıysa, "Tanınmayan karakter" metin gösteriniz.
 
 
 ```c#
@@ -79,7 +79,7 @@ break;
 ````
 ## Proje3
 
-##Bir sayı (x) isteyen ve bu sayının pozitif mi yoksa negatif mi olduğunu yanıtlayan br C# programı yazın.
+## Bir sayı (x) isteyen ve bu sayının pozitif mi yoksa negatif mi olduğunu yanıtlayan br C# programı yazın.
 
 ````c#
 Console.WriteLine("Bir Sayı Giriniz");
@@ -113,7 +113,7 @@ Console.WriteLine("Birinci sayıyı girin.");
 ````
 
 ## Proje5
-## C#'ta br sayı (x) isteyen ve 10 * x' görüntüleyen bir program oluşturun. Kullanıcı 0 girene kadar tekrarlanmalıdır. 
+## C#'ta bir sayı (x) isteyen ve 10 * x' görüntüleyen bir program oluşturun. Kullanıcı 0 girene kadar tekrarlanmalıdır. 
 ```c#
     Console.WriteLine("Birinci Sayıyı Giriniz:"); 
 
@@ -145,7 +145,7 @@ Console.WriteLine("Birinci sayıyı girin.");
 ````
 # Proje7
 
-## C# dilinde sayı isteyen ve toplamlarını gösteren bir program yazın. Kullanıcı 0 girene kadar numara isteyn ve program bittğinde Bitti gösterlin
+## C# dilinde sayı isteyen ve toplamlarını gösteren bir program yazın. Kullanıcı 0 girene kadar numara isteyen ve program bittiğinde Bitti gösterlin
 ````C#
 int toplam = 0;
         Console.WriteLine("Sayıları giriniz (Çıkmak için 0 giriniz):");
@@ -171,7 +171,7 @@ int toplam = 0;
 ````
 
 ## Proje 8
-## Kullanıcıdan 5 tam sayı steyen ve aşağıdak matematksel statstkler ekranda görüntüleyen br C# programı oluşturun 
+## Kullanıcıdan 5 tam sayı isteyen ve aşağıdaki matematiksel istatistkler ekranda görüntüleyen br C# programı oluşturun 
 
 ````c#
 Console.WriteLine("Bir Sayı Giriniz");
@@ -238,12 +238,10 @@ if (sayı1<sayı5 && sayı1<sayı2 && sayı1<sayı3 && sayı1<sayı4)
     Console.WriteLine("Minimum Sayı"+sayı1);
 }
 
-
-
 ````
 
 # Proje 9
-## C# dlnde br sayı (x) ve br mktar (y) steyen br program yazın. Bu sayıyı mktarın (y) katıkadar göstern 
+## C# dilinde bir sayı (x) ve bir miktar (y) isteyen br program yazın. Bu sayıyı miktarın (y) katıkadar gösterin 
 ````c#
 
         Console.Write("Bir sayı giriniz (x): ");
@@ -256,13 +254,10 @@ if (sayı1<sayı5 && sayı1<sayı2 && sayı1<sayı3 && sayı1<sayı4)
         {
             Console.WriteLine(x);
         }
-  
-
-
 
 ````
 # Proje 10
-## 1'den 500'e kadar 3'ün  ve  5'n katları olan sayıları gösteren br C# programı oluşturun. 
+## 1'den 500'e kadar 3'ün  ve  5'in katları olan sayıları gösteren br C# programı oluşturun. 
 
 ````c#
 for (int i = 1; i <= 500;
@@ -274,9 +269,9 @@ i++)
 ````
 
 # Proje 11
-## C# dlnde kullanıcıdan kullanıcı adı ve şfre steyen br erşm kontrolü yazın. Her ks de tamsayı olmalıdır ve grş 12 ve şfre 1234 olduğunda "grş başarılı yazmalı"  yanlışsa  vetamsayı olmalıdır n fazla 3 deneme yapana kadar tekrarlanmalıdır. 
+## C# dilinde kullanıcıdan kullanıcı adı ve şifre isteyen br erişim kontrolü yazın. Her ikisi de tamsayı olmalıdır ve giriş 12 ve şifre 1234 olduğunda "giriş başarılı yazmalı"  yanlışsa  ve tamsayı olmalıdır n fazla 3 deneme yapana kadar tekrarlanmalıdır. 
 ````c# 
-int hak =3;
+int hak = 3;
 while (true )
 {
     if (hak == 0){
@@ -307,7 +302,7 @@ while (true )
 `````
 
 # Proje 12 
-## C# dlnde kullanıcıdan k sayı steyen ve bölme şlem le bölmenn ger kalanını gösteren br program yazın. İknc sayı olarak 0 grlrse kullanıcıya bldrm yapın ve lk ayı olarak 0 grlrse programı sonlandırın.
+## C# dilinde kullanıcıdan iki sayı isteyen ve bölme işlem ile bölmenn geri kalanını gösteren bir program yazın. İknci sayı olarak 0 girilirse kullanıcıya bildirim yapın ve ilk ayı olarak 0 girilirse programı sonlandırın.
 
 ````c#
 
@@ -338,7 +333,7 @@ while (true )
 ````
 
 # Proje 13
-## Kullanıcıdan br sayı aralığı (x, y) steyen ve x'ten y'ye kadar çarpım tablosunu görüntüleyen br C# programı oluşturun. 
+## Kullanıcıdan bir sayı aralığı (x, y) isteyen ve x'ten y'ye kadar çarpım tablosunu görüntüleyen br C# programı oluşturun. 
 
  ````c#
  Console.WriteLine("Bir Sayı Giriniz");
@@ -360,7 +355,7 @@ Console.WriteLine();
 
 ````
 # Proje 14
-## Br öğrencnn notunu br tamsayıdan hesaplayan br C# programı oluşturun. Kullanıcıdan br sayı (x) steyn ve aşağıdakler yanıtlayın: 
+## Br öğrencnn notunu bir tamsayıdan hesaplayan br C# programı oluşturun. Kullanıcıdan bir sayı (x) steyn ve aşağıdakleri yanıtlayın: 
 
 ````c#
 Console.WriteLine("Bir Sayı Giriniz");
@@ -387,7 +382,7 @@ switch (sayı)
 }
 ````
 # Proje 15
-## Kullanıcıdan k tamsayı (x, y) steyen ve bu sayıların aralığını (k sayı da dahl olmak üzere) üç farklı yöntemle gösteren br C# programı oluşturun:
+## Kullanıcıdan iki tamsayı (x, y) isteyen ve bu sayıların aralığını (iki sayı da dahl olmak üzere) üç farklı yöntemle gösteren bir C# programı oluşturun:
 
 ````C#
 Console.Write("Birinci Sayıyı Giriniz: ");
