@@ -42,8 +42,8 @@ if (işlem == "4");
 }
 ````
 ## Proje2
-##Kullanıcıdan iki sayı ve bir şlem (+, -, x, /) sembolü isteyen ve 
-ardından işlem hesaplayıp sonucu ekrana yazan br C# programı yazınız.Eğer işlem sembolü öncek sembollerden farklıysa, "Tanınmayan karakter" metnn gösternz.
+## Kullanıcıdan iki sayı ve bir şlem (+, -, x, /) sembolü isteyen ve ardından işlem hesaplayıp sonucu ekrana yazan br C# programı yazınız.Eğer işlem sembolü öncek sembollerden farklıysa, "Tanınmayan karakter" metnn gösternz.
+
 
 ```c#
 Console.WriteLine("1. Sayıyı Giriniz");
@@ -97,7 +97,7 @@ if (sayi < 0)
 
 
 ## Proje4
-##C# dilinde üç sayıyı (x, y, z) isteyen ve en büyüğünü görüntüleyen bir program yazın. 
+## C# dilinde iki sayıyı (x, y) isteyen ve en büyüğünü görüntüleyen bir program yazın. 
 
 ````c# 
 Console.WriteLine("Birinci sayıyı girin."); 
@@ -113,7 +113,7 @@ Console.WriteLine("Birinci sayıyı girin.");
 ````
 
 ## Proje5
-##C#'ta br sayı (x) isteyen ve 10 * x' görüntüleyen bir program oluşturun. Kullanıcı 0 girene kadar tekrarlanmalıdır. 
+## C#'ta br sayı (x) isteyen ve 10 * x' görüntüleyen bir program oluşturun. Kullanıcı 0 girene kadar tekrarlanmalıdır. 
 ```c#
     Console.WriteLine("Birinci Sayıyı Giriniz:"); 
 
