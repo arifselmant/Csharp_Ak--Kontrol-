@@ -132,47 +132,46 @@ Console.WriteLine("Birinci sayıyı girin.");
 
 ```c#	
 
-int toplam = 0;
+        Console.Write("Başlangıç sayısını giriniz: ");
+        int baslangic = Convert.ToInt32(Console.ReadLine());
 
-while(true)
-{
-Console.WriteLine("  Sayı Giriniz");
-int sayi = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Bitiş sayısını giriniz: ");
+        int bitis = Convert.ToInt32(Console.ReadLine());
 
-toplam += sayi;
+        for (int i = baslangic; i <= bitis; i++)
+        {
+            Console.WriteLine(i);
+        }
+    
 
 
-if (sayi == 0)
-{
-    break;
-}
-
-else 
-{
-    Console.WriteLine(toplam);
-
-}
-
-}
-
-    Console.WriteLine(toplam);
-    Console.WriteLine(" Programdan Çıkış Yapıldı ...");
-
+  
 ````
 # Proje7
 
 ## C# dilinde sayı isteyen ve toplamlarını gösteren bir program yazın. Kullanıcı 0 girene kadar numara isteyn ve program bittğinde Bitti gösterlin
 ````C#
-Console.WriteLine("Bir X Sayısı Giriniz");
-int x = Convert.ToInt32(Console.ReadLine());
+int toplam = 0;
+        Console.WriteLine("Sayıları giriniz (Çıkmak için 0 giriniz):");
 
-Console.WriteLine("Bir Y Sayısı Giriniz");
-int y = Convert.ToInt32(Console.ReadLine());
+        
+        for (int sayi = Convert.ToInt32(Console.ReadLine()); sayi != 0; sayi = Convert.ToInt32(Console.ReadLine()))
+        {
+            toplam += sayi;
+        }
 
-for (int i = 0; i <y; i++)
-{
-    Console.Write(x);
-}
+        
+        
+        int sayi = Convert.ToInt32(Console.ReadLine());
+        while (sayi != 0)
+        {
+            toplam += sayi;
+            sayi = Convert.ToInt32(Console.ReadLine());
+        }
+        
+
+        Console.WriteLine($"Toplam: {toplam}");
+        Console.WriteLine("Bitti");
 ````
 
 ## Proje 8
@@ -250,12 +249,20 @@ if (sayı1<sayı5 && sayı1<sayı2 && sayı1<sayı3 && sayı1<sayı4)
 # Proje 9
 ## C# dlnde br sayı (x) ve br mktar (y) steyen br program yazın. Bu sayıyı mktarın (y) katıkadar göstern 
 ````c#
-for (int i = 1; i <= 500;
-i++)
-{
-    if (i % 3 == 0 && i % 5 == 0)
-    {
-        Console.WriteLine(i); }}
+
+        Console.Write("Bir sayı giriniz (x): ");
+        int x = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Bir miktar giriniz (y): ");
+        int y = Convert.ToInt32(Console.ReadLine());
+
+        for (int i = 0; i < y; i++)
+        {
+            Console.WriteLine(x);
+        }
+  
+
+
 
 ````
 # Proje 10
@@ -270,14 +277,14 @@ i++)
         Console.WriteLine(i);}}
 ````
 
-# PROJE 11
+# Proje 11
 ## C# dlnde kullanıcıdan kullanıcı adı ve şfre steyen br erşm kontrolü yazın. Her ks de tamsayı olmalıdır ve grş 12 ve şfre 1234 olduğunda "grş başarılı yazmalı"  yanlışsa  vetamsayı olmalıdır n fazla 3 deneme yapana kadar tekrarlanmalıdır. 
 ````c# 
 int hak =3;
 while (true )
 {
     if (hak == 0){
-        System.Console.WriteLine("Hakkınız Bitti :");
+        Console.WriteLine("Hakkınız Bitti :");
         break;
     }
     else 
@@ -290,12 +297,12 @@ while (true )
 
     if (giriş == 12 && şifre == 1234)
     {
-        System.Console.WriteLine("Giriş Başarılı ");
+        Console.WriteLine("Giriş Başarılı ");
         break;
     }
     else
     {
-        System.Console.WriteLine("Giriş Başarısız");
+        Console.WriteLine("Giriş Başarısız");
         hak--;
     }
     }
@@ -307,30 +314,30 @@ while (true )
 ## C# dlnde kullanıcıdan k sayı steyen ve bölme şlem le bölmenn ger kalanını gösteren br program yazın. İknc sayı olarak 0 grlrse kullanıcıya bldrm yapın ve lk ayı olarak 0 grlrse programı sonlandırın.
 
 ````c#
-Console.Write("Birinci sayıyı giriniz: ");
-int sayi1 = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("İkinci sayıyı giriniz: ");
-int sayi2 = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Birinci sayıyı giriniz (Programı sonlandırmak için 0 giriniz): ");
+        int sayi1 = Convert.ToInt32(Console.ReadLine());
 
-    if (sayi2 == 0)
+        if (sayi1 == 0)
         {
-            Console.WriteLine("İkinci sayı sıfır olamaz. Lütfen farklı bir sayı girin.");
-            }
-        else if (sayi1 == 0)
-        {
-        Console.WriteLine("İlk sayı sıfır olduğu için program sonlandırıldı.");
+            Console.WriteLine("Program sonlandırıldı.");
+            return;
         }
-    else
-    {
-        int bolum = sayi1 / sayi2;
-        int kalan = sayi1 % sayi2;
- 
-            Console.WriteLine($"Bölüm: {bolum}");
-                Console.WriteLine($"Kalan: {kalan}");
-            }
 
-            Console.ReadLine();
+        Console.Write("İkinci sayıyı giriniz (Bölme işlemi için 0'dan farklı bir sayı giriniz): ");
+        int sayi2 = Convert.ToInt32(Console.ReadLine());
+
+        if (sayi2 == 0)
+        {
+            Console.WriteLine("Bir sayıyı 0'a bölemezsiniz. Lütfen 0'dan farklı bir sayı giriniz.");
+        }
+        else
+        {
+            int kalan = sayi1 % sayi2;
+            Console.WriteLine($"Bölme işleminin geri kalanı: {kalan}");
+        }
+    
+
 
 ````
 
@@ -415,7 +422,7 @@ Console.Write(i + " ");
 ````
 
 # PROJE 16
-##Poztf br tamsayının kaç basamağı olduğunu hesaplayan programı c# le hazırlayın.  Kullanıcı negatf br tamsayı grdğnde, program uyarı mesajı göstermel ve karşılık gelen poztf sayı le devam etmeldr.
+## Poztf br tamsayının kaç basamağı olduğunu hesaplayan programı c# le hazırlayın.  Kullanıcı negatf br tamsayı grdğnde, program uyarı mesajı göstermel ve karşılık gelen poztf sayı le devam etmeldr.
 
 ````C#
      Console.Write("Bir Sayı Giriniz ");
@@ -435,35 +442,46 @@ Console.Write(i + " ");
 ````
 
 # Proje 17
-## C# dlnde, br sayının mutlak değern hesaplayıp gösteren br program yazın. Eğer sayı poztfse, mutlak değer tam olarak sayı x'tr.  Eğer sayı negatfse, mutlak değer -x'tr
+## Sadece br for döngüsü ve char değşkenler kullanarak alfabenn büyük harflern gösteren br C# programı yazın. 
 
 ```` c# 
-Console.WriteLine("Bir Sayı Giriniz");
-   int sayi = Convert.ToInt32(Console.ReadLine());
 
-   if (sayi == 0)
-{
-    Console.WriteLine("Girilen Sayı 0 Lütfen Başka Bir Sayı Giriniz");
-}
-
-    else if ( sayi > 0)
-    {
-        Console.WriteLine($"Mutlak Değer = {sayi}");
-    }
-   
-   if (sayi < 0)
+        for (char harf = 'A'; harf <= 'Z'; harf++)
         {
-            Console.WriteLine("Negatif Bir Sayı Girdiniz Sayınız Pozitife Çeviriliyor");
-            sayi *= -1;
+            Console.WriteLine(harf);
         }
+    
 
-        Console.WriteLine("Sayının Pozitif Hali: " + sayi);
 
 `````
 
 # Proje 18
-## C# dlnde, kullanıcıdan k tamsayı steyen ve çarpımlarını gösteren, ancak * operatörünü kullanmadan gerçekleştren br program oluşturun. Ardışık toplamları kullanmalısınız.
+## C# dlnde, br sayının mutlak değern hesaplayıp gösteren br program yazın. Eğer sayı poztfse, mutlak değer tam olarak sayı x'tr. Eğer sayı negatfse, mutlak değer -x'tr." 
+
+
 ````c#
+ Console.Write("Bir Sayı Giriniz ");
+    int sayi = Convert.ToInt32(Console.ReadLine());
+
+        if (sayi < 0)
+        {
+            Console.WriteLine("Negatif bir sayı girdiniz. Pozitif karşılığı ile devam ediliyor...");
+            sayi = Math.Abs(sayi);
+        }
+
+        int basamakSayisi = sayi.ToString().Length;
+
+
+     
+        Console.WriteLine("Girilen sayının basamak sayısı: " + basamakSayisi);
+
+````
+
+# Proje 19
+## C# dlnde, kullanıcıdan k tamsayı steyen ve çarpımlarını gösteren, ancak * operatörünü kullanmadan gerçekleştren br program oluşturun. Ardışık toplamları kullanmalısınız. 
+
+````c#
+
 Console.WriteLine("Bir Sayı Giriniz");
     int sayi1 = Convert.ToInt32(Console.ReadLine());
 
@@ -473,120 +491,50 @@ Console.WriteLine("Bir Sayı Giriniz");
     for (int i = 0; i < 1; i++)
     {
         Console.WriteLine($"{sayi1} x {sayi2} = {sayi1 * sayi2}");
-    }
-
-````
-
-# Proje 19
-## C# dlnde kullanıcıdan br tamsayı soran ve bu sayının asal sayı olup olmadığını yanıtlayan br program yazın.
-
-````c#
-Console.Write("Bir tamsayı giriniz: ");
-        int sayi = Convert.ToInt32(Console.ReadLine());
-        bool asalMi = true;
-
-        if (sayi < 2)
-        {
-            asalMi = false;
-        }
-        else
-        {
-            for (int i = 2; i <= Math.Sqrt(sayi); i++)
-            {
-                if (sayi % i == 0)
-                {
-                    asalMi = false;
-                    break;
-                }
-            }
-        }
-
-        Console.WriteLine(asalMi ? $"{sayi} asal bir sayıdır." : $"{sayi} asal bir sayı değildir.");
-
 ````
 
 # Proje 20
-## C# dlnde, x'ten y'ye kadar olan tek sayıları azalan sırada gösteren br program oluşturun. 
-````c#
-Console.WriteLine("Başlangıç Sayısını Giriniz:");
-        int x = Convert.ToInt32(Console.ReadLine());
+## C# dlnde kullanıcıdan br tamsayı soran ve bu sayının asal sayı olup olmadığını yanıtlayan br program yazın.
 
-        Console.WriteLine("Bitiş Sayısını Giriniz:");
+````c#
+    Console.Write("Bir Sayı Giriniz ");
+    int sayi = Convert.ToInt32(Console.ReadLine());
+
+        if (sayi < 0)
+        {
+            Console.WriteLine("Negatif bir sayı girdiniz. Pozitif karşılığı ile devam ediliyor...");
+            sayi = Math.Abs(sayi);
+        }
+
+        int basamakSayisi = sayi.ToString().Length;
+
+
+     
+        Console.WriteLine("Girilen sayının basamak sayısı: " + basamakSayisi);
+*/
+````
+
+# Proje 21
+## C# dlnde, x'ten y'ye kadar olan tek sayıları azalan sırada gösteren br program 
+oluşturun. 
+
+````c# 
+ Console.Write("Lütfen başlangıç değeri (x) giriniz: ");
+        int x = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Lütfen bitiş değeri (y) giriniz: ");
         int y = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Tek Sayılar:");
         for (int i = y; i >= x; i--)
         {
             if (i % 2 != 0)
             {
                 Console.WriteLine(i);
-            }}
+            }
+        }
 ````
+# Proje 22
+## Süpermarket kasasını smüle eden ve para üstünü hesaplamak çn br C# programıoluşturun. Ürün fyatı (x) ve verlen para (y) alan ve gerye para üstü veren programı yazın.
 
-# Proje 21
-## Süpermarket kasasını smüle eden ve para üstünü hesaplamak çn br C# programı oluşturun. Ürün fyatı (x) ve verlen para (y) alan ve gerye para üstü veren programı yazın
-
-
-````c# 
- Console.WriteLine("Ürün fiyatını girin: ");
-        int urunFiyati = Convert.ToInt32(Console.ReadLine());
-
-        Console.WriteLine("Verilen para miktarını girin: ");
-        int verilenPara = Convert.ToInt32(Console.ReadLine());
-
-        int paraUstu = verilenPara - urunFiyati;
-
-        if (paraUstu < 0)
-        {
-            Console.WriteLine("Yetersiz para ödendi.");
-        }
-        else if (paraUstu == 0)
-        {
-            Console.WriteLine("Para üstü yok.");
-        }
-        else
-        {
-            Console.WriteLine($"Para üstü: {paraUstu} TL");
-
-
-            int yuzlukAdet = (int)(paraUstu / 100);
-            paraUstu %= 100;
-            if (yuzlukAdet > 0)
-                Console.WriteLine($"{yuzlukAdet} adet 100 TL");
-
-            int elliAdet = (int)(paraUstu / 50);
-            paraUstu %= 50;
-            if (elliAdet > 0)
-                Console.WriteLine($"{elliAdet} adet 50 TL");
-
-            int yirmiAdet = (int)(paraUstu / 20);
-            paraUstu %= 20;
-            if (yirmiAdet > 0)
-                Console.WriteLine($"{yirmiAdet} adet 20 TL");
-
-            int onlukAdet = (int)(paraUstu / 10);
-            paraUstu %= 10;
-            if (onlukAdet > 0)
-                Console.WriteLine($"{onlukAdet} adet 10 TL");
-
-            int beslikAdet = (int)(paraUstu / 5);
-            paraUstu %= 5;
-            if (beslikAdet > 0)
-                Console.WriteLine($"{beslikAdet} adet 5 TL");
-
-            int ikilikAdet = (int)(paraUstu / 2);
-            paraUstu %= 2;
-            if (ikilikAdet > 0)
-                Console.WriteLine($"{ikilikAdet} adet 2 TL");
-
-            int birlikAdet = (int)paraUstu;
-            if (birlikAdet > 0)
-                Console.WriteLine($"{birlikAdet} adet 1 TL");
-        }
-
-````
-# Proje 21
-## Kullanıcıdan k sayı steyen ve koşullu operatör (?) kullanarak aşağıdakler yanıtlayan br C# programı oluşturun:  
  ```` c# 
  Console.WriteLine("Bir Sayı Giriniz");
 int sayi1 = Convert.ToInt32(Console.ReadLine());
@@ -666,6 +614,65 @@ else if (sayi1 < 0 || sayi2 < 0)
 }
 
 ````
+# Proje 23
+## Kullanıcıdan k sayı steyen ve koşullu operatör (?) kullanarak aşağıdakler yanıtlayan br C# programı oluşturun: 
+````c#
+Console.WriteLine("Bir Sayı Giriniz");
+int sayi1 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Bir Sayı Giriniz");
+int sayi2 = Convert.ToInt32(Console.ReadLine());
+
+if (sayi1  > 0 )
+{
+    Console.WriteLine(" Sayı1  Pozitif");
+}
+
+if (sayi2  > 0 )
+{
+    Console.WriteLine(" Sayı2 Pozitif");
+}
 
 
+
+
+    else if (sayi1 < 0) 
+    {
+    Console.WriteLine("Sayı 1 Negatif");
+    }
+
+    else if (sayi2 < 0) 
+    {
+    Console.WriteLine("Sayı 2 Negatif");
+    }
+    
+    
+    else if (sayi1 == 0 )
+    {
+    Console.WriteLine("Sayı1 0 Lütfen Başka Bir Sayı Giriniz");
+    }
+
+
+else if (sayi2 == 0 )
+{
+    Console.WriteLine("Sayı2 0 Lütfen Başka Bir Sayı Giriniz");
+}
+````
+# Proje 24
+## Kullanıcıdan k tamsayı (a, b) steyen ve bunlardan kaç tanesnn poztf olduğunu kontrol eden br C# programı oluşturun
+
+````c#
+
+        Console.WriteLine("Bir Sayı Giriniz (a): ");
+        int a = Convert.ToInt32(Console.ReadLine());
+        Console.Write("bİr Sayı Giriniz (b): ");
+        int b = Convert.ToInt32(Console.ReadLine());
+
+        int pozitif_sayi = 0;
+
+        if (a > 0) pozitif_sayi++;
+        if (b > 0) pozitif_sayi++;
+
+        Console.WriteLine($"Girilen sayılardan{pozitif_sayi}tanesi pozitiftir.");
+    
   
