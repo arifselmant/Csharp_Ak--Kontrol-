@@ -536,46 +536,60 @@ oluşturun.
 ## Süpermarket kasasını smüle eden ve para üstünü hesaplamak çn br C# programıoluşturun. Ürün fyatı (x) ve verlen para (y) alan ve gerye para üstü veren programı yazın.
 
  ```` c# 
- Console.WriteLine("Bir Sayı Giriniz");
-int sayi1 = Convert.ToInt32(Console.ReadLine());
+ Console.WriteLine("Ürün fiyatını girin: ");
+        int urunFiyati = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Bir Sayı Giriniz");
-int sayi2 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Verilen para miktarını girin: ");
+        int verilenPara = Convert.ToInt32(Console.ReadLine());
 
-if (sayi1  > 0 )
-{
-    Console.WriteLine(" Sayı1  Pozitif");
-}
+        int paraUstu = verilenPara - urunFiyati;
 
-if (sayi2  > 0 )
-{
-    Console.WriteLine(" Sayı2 Pozitif");
-}
-
-
-
-
-    else if (sayi1 < 0) 
-    {
-    Console.WriteLine("Sayı 1 Negatif");
-    }
-
-    else if (sayi2 < 0) 
-    {
-    Console.WriteLine("Sayı 2 Negatif");
-    }
-    
-    
-    else if (sayi1 == 0 )
-    {
-    Console.WriteLine("Sayı1 0 Lütfen Başka Bir Sayı Giriniz");
-    }
+        if (paraUstu < 0)
+        {
+            Console.WriteLine("Yetersiz para ödendi.");
+        }
+        else if (paraUstu == 0)
+        {
+            Console.WriteLine("Para üstü yok.");
+        }
+        else
+        {
+            Console.WriteLine($"Para üstü: {paraUstu} TL");
 
 
-else if (sayi2 == 0 )
-{
-    Console.WriteLine("Sayı2 0 Lütfen Başka Bir Sayı Giriniz");
-}
+            int yuzlukAdet = (int)(paraUstu / 100);
+            paraUstu %= 100;
+            if (yuzlukAdet > 0)
+                Console.WriteLine($"{yuzlukAdet} adet 100 TL");
+
+            int elliAdet = (int)(paraUstu / 50);
+            paraUstu %= 50;
+            if (elliAdet > 0)
+                Console.WriteLine($"{elliAdet} adet 50 TL");
+
+            int yirmiAdet = (int)(paraUstu / 20);
+            paraUstu %= 20;
+            if (yirmiAdet > 0)
+                Console.WriteLine($"{yirmiAdet} adet 20 TL");
+
+            int onlukAdet = (int)(paraUstu / 10);
+            paraUstu %= 10;
+            if (onlukAdet > 0)
+                Console.WriteLine($"{onlukAdet} adet 10 TL");
+
+            int beslikAdet = (int)(paraUstu / 5);
+            paraUstu %= 5;
+            if (beslikAdet > 0)
+                Console.WriteLine($"{beslikAdet} adet 5 TL");
+
+            int ikilikAdet = (int)(paraUstu / 2);
+            paraUstu %= 2;
+            if (ikilikAdet > 0)
+                Console.WriteLine($"{ikilikAdet} adet 2 TL");
+
+            int birlikAdet = (int)paraUstu;
+            if (birlikAdet > 0)
+                Console.WriteLine($"{birlikAdet} adet 1 TL");
 
 ````
 
